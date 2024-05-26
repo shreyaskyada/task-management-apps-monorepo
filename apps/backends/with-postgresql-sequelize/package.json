@@ -7,12 +7,13 @@
   "scripts": {
     "build": "npx tsc",
     "preserver": "npm run build",
-    "server": "npx concurrently \"npx tsc -w\"  \"nodemon dist/server.js\""
+    "dev": "npx concurrently \"npx tsc -w --preserveWatchOutput\"  \"nodemon dist/server.js\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.19.2",
     "typescript": "^5.4.5"
   },
   "devDependencies": {
@@ -22,6 +23,7 @@
     "@typescript-eslint/parser": "^7.10.0",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.1.3"
+    "eslint-plugin-prettier": "^5.1.3",
+    "nodemon": "^3.1.1"
   }
 }

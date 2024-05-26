@@ -4,6 +4,7 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev --filter=with-react",
+    "dev:rps": "turbo dev --filter=with-postgresql-sequelize --filter=with-react",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
