@@ -1,9 +1,9 @@
 {
-  "name": "POCs",
+  "name": "task-management-apps-monorepo",
   "private": true,
   "scripts": {
     "build": "turbo build",
-    "dev": "turbo dev",
+    "dev": "turbo dev --filter=with-react",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
@@ -18,7 +18,8 @@
   },
   "packageManager": "npm@10.5.0",
   "workspaces": [
-    "apps/*",
+    "apps/frontends/*",
+    "apps/backends/*",
     "packages/*"
   ]
 }
